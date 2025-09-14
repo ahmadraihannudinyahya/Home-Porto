@@ -50,9 +50,9 @@ body {
 
 .sidebar ul li a {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
-    gap: 6px; 
+    gap: 6px;
     text-decoration: none;
     color: #113F67;
     font-size: 18px;
@@ -146,6 +146,7 @@ body {
     font-size: 48px;
     margin-left: -30px;
     margin-bottom: 20px;
+    color: #113F67;
 }
 
 .about p {
@@ -154,3 +155,35 @@ body {
     margin-bottom: 25px;
     color: #444;
 }
+
+.project a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container_item{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project .container_item .item {
+    cursor: pointer;
+    background: #FDF5AA;
+    color: #58A0C8;
+    /* color: white; */
+    /* border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25); */
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+    width: auto;
+}
+
+.project .container_item .item h4 {
+    margin-top: 10px;
+}
+
