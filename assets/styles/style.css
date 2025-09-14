@@ -25,7 +25,7 @@ body {
     display: flex;
     height: 100vh;
     overflow: hidden;
-    background-image: url('/assets/images/bg.jpg');
+    background-image: url('./../images/bg.jpg');
     padding: 50px;
 }
 
@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
 }
 
@@ -66,7 +66,7 @@ body {
     padding-left: 0;
 }
 
-.profile {
+.main .profile {
     width: 50vw;
     text-align: center;
     z-index: 1;
@@ -135,14 +135,14 @@ body {
     padding-left: 40px;
 }
 
-.bio > div {
+.bio>div {
     height: 100%;
     scroll-snap-align: start;
     padding: 40px;
     box-sizing: border-box;
 }
 
-.bio > div > h3 {
+.bio>div>h3 {
     font-size: 48px;
     margin-left: -30px;
     margin-bottom: 20px;
@@ -162,7 +162,7 @@ body {
 }
 
 
-.container_item{
+.container_item {
     display: flex;
     gap: 10px;
     flex-direction: row;
@@ -171,8 +171,8 @@ body {
 
 .project .container_item .item {
     cursor: pointer;
-    background: #FDF5AA;
-    color: #58A0C8;
+    background: #113F67;
+    color: #FDF5AA;
     /* color: white; */
     /* border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.25); */
@@ -187,3 +187,52 @@ body {
     margin-top: 10px;
 }
 
+
+@media (max-width: 1250px) {
+    body {
+        flex-direction: column;
+        overflow: auto;
+        height: auto;
+    }
+
+    .sidebar {
+        padding: 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+    }
+
+    .sidebar ul li a {
+        flex-direction: row;
+    }
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    .main {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main .profile {
+        width: 100%;
+        /* height: 30vh; */
+    }
+
+    .main .profile img {
+        height: 250px;
+    }
+
+    .main .profile .profile_detail {
+        height: 20%;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    .bio>div{
+        padding: 10px;
+    }
+    .bio>div>h3{
+        font-size: 34px;
+    }
+}
