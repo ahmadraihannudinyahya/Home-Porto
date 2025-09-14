@@ -1,0 +1,156 @@
+/* 
+113F67
+34699A
+58A0C8
+FDF5AA
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('/assets/images/bg.jpg');
+    padding: 50px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 6px; 
+    text-decoration: none;
+    color: #113F67;
+    font-size: 18px;
+}
+
+
+.main {
+    flex: 1;
+    display: flex;
+    padding: 40px;
+    padding-left: 0;
+}
+
+.profile {
+    width: 50vw;
+    text-align: center;
+    z-index: 1;
+}
+
+.profile img {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    border-radius: 12px;
+}
+
+.profile .profile_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+
+.profile .profile_detail h2 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #113F67;
+}
+
+
+.profile .profile_detail p {
+    color: #34699A;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.profile .contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.profile .contacts a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+
+.profile .contacts a i {
+    font-size: 24px;
+    color: #34699A;
+    min-width: 20px;
+}
+
+.bio {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.bio > div {
+    height: 100%;
+    scroll-snap-align: start;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.bio > div > h3 {
+    font-size: 48px;
+    margin-left: -30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #444;
+}

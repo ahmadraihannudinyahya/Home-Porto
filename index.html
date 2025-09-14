@@ -5,58 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <h1 class="name">Ahmad Raihannudin Yahya</h1>
-            <p class="role">Backend Developer</p>
-        </div>
-        <div class="contacts">
-            <a href="mailto:ahmad.raihannudin.yahya@gmail.com">ahmad.raihannudin.yahya@gmail.com</a>
-            <a href="tel:+62818588180">0818 58 8180</a>
-            <a href="https://www.linkedin.com/in/ahmad-raihannudin/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-    </header>
-
-    <section aria-labelledby="ringkasan">
-        <h2 id="ringkasan">Ringkasan</h2>
-        <p>
-            Backend Developer berpengalaman membangun modul berbasis microservices, menangani integrasi
-            sinkron/asinkron,
-            serta mengelola data transaksi berskala nasional hingga internasional. Pernah mengelola dan
-            mendeploy WordPress di VPS untuk kebutuhan komersial.
-        </p>
-    </section>
-
-    <section aria-labelledby="project">
-        <h2 id="project">Project</h2>
-
-        <div class="item">
-            <h3>-</h3>
-        </div>
-    </section>
-
-
-    <section aria-labelledby="sertifikasi">
-        <h2 id="sertifikasi">Sertifikasi</h2>
-        <ul>
-            <li><a href="https://www.dicoding.com/certificates/MRZMKOL13PYQ" target="_blank" rel="noopener">Expert
-                    Back-End Developer — Dicoding</a></li>
-            <li><a href="https://www.dicoding.com/certificates/ERZR5337OPYV" target="_blank" rel="noopener">Expert
-                    Front-End Web Developer — Dicoding</a></li>
-            <li><a href="https://www.dicoding.com/certificates/53XEE63QYXRN" target="_blank" rel="noopener">Architecting
-                    on AWS — Dicoding</a></li>
-            <li><a href="https://www.credly.com/badges/143b941c-c1a9-400c-8c15-0b2eebe1d205/public_url" target="_blank"
-                    rel="noopener">Kong Gateway Foundations — Credly</a></li>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="glass">
+            <li><a href="#about"><i class="fa-solid fa-circle-user"></i>About</a></li>
+            <li><a href="#educations"><i class="fa-solid fa-user-graduate"></i>Education</a></li>
+            <li><a href="#sertifikasi"><i class="fa-solid fa-award"></i>Sertifikasi</a></li>
+            <li><a href="#project"><i class="fa-solid fa-laptop-code"></i></i>Project</a></li>
         </ul>
-    </section>
+    </div>
 
-    <footer>
-        © <span id="y">2025</span> Ahmad Raihannudin Yahya · Portofolio
-    </footer>
+    <!-- Main content -->
+    <div class="main">
+
+        <!-- Profile Card -->
+        <div class="profile glass">
+            <img src="/assets/images/profile.jpeg" alt="Profile">
+            <div class="profile_detail">
+                <h2>Ahmad Raihannudin Yahya</h2>
+                <p>Backend Developer</p>
+                <div class="contacts">
+                    <a href="mailto:ahmad.raihannudin.yahya@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+62818588180">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmad-raihannudin/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="bio glass">
+            <div class="about">
+                <h3 id="about">About me</h3>
+                <p> Backend Developer berpengalaman membangun modul berbasis microservices, menangani integrasi
+                    sinkron/asinkron, serta mengelola data transaksi berskala nasional hingga internasional. Pernah
+                    mengelola dan mendeploy WordPress di VPS untuk kebutuhan komersial. </p>
+
+                <div class="info">
+                    <span>Age:</span>
+                    <p>23</p>
+                    <span>Residence:</span>
+                    <p>Jakarta</p>
+                    <span>Address:</span>
+                    <p>Cempaka Putih, Indonesia</p>
+                </div>
+            </div>
+            <div class="educations">
+                <h3 id="educations">Educations</h3>
+
+                <div class="item">
+                    <h3>-</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3 id="project">Project</h3>
+
+                <div class="item">
+                    <h3>-</h3>
+                </div>
+            </div>
+            <div class="sertifikasi">
+                <h3 id="sertifikasi">Sertifikasi</h3>
+                <div>
+                    <ul>
+                        <li><a href="https://www.dicoding.com/certificates/MRZMKOL13PYQ" target="_blank"
+                                rel="noopener">Expert
+                                Back-End Developer — Dicoding</a></li>
+                        <li><a href="https://www.dicoding.com/certificates/ERZR5337OPYV" target="_blank"
+                                rel="noopener">Expert
+                                Front-End Web Developer — Dicoding</a></li>
+                        <li><a href="https://www.dicoding.com/certificates/53XEE63QYXRN" target="_blank"
+                                rel="noopener">Architecting
+                                on AWS — Dicoding</a></li>
+                        <li><a href="https://www.credly.com/badges/143b941c-c1a9-400c-8c15-0b2eebe1d205/public_url"
+                                target="_blank" rel="noopener">Kong Gateway Foundations — Credly</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
